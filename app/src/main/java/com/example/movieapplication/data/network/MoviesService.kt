@@ -24,6 +24,6 @@ class MoviesService @Inject constructor(private val moviesAPI: MoviesAPI): BaseA
     }
 
     companion object {
-        val PHOTO_BASE_URL = "https://image.tmdb.org/t/p/w500"
+        const val PHOTO_BASE_URL = "https://image.tmdb.org/t/p/w500"
     }
 }

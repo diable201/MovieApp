@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val mainFragmentPosition = pagerAdapter.getFragmentPosition(MainFragment::class)
-        if(viewPager.currentItem == mainFragmentPosition) {
+        if (viewPager.currentItem == mainFragmentPosition) {
             super.onBackPressed()
         }
         else {

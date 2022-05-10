@@ -33,7 +33,7 @@ class MoviesRepository @Inject constructor(private val moviesService: MoviesServ
     }
 
     fun refresh(movieList: MovieListUtils.MovieList) {
-        if(moviesService.isNetworkAvailable()) {
+        if (moviesService.isNetworkAvailable()) {
             disposable.add(
                 Observable.just(Unit)
                     .doOnNext {

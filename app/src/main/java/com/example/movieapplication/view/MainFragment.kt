@@ -84,11 +84,11 @@ class MainFragment : Fragment() {
 
     private fun getMoviesBySpinnerPosition(movieListPosition: Int, isRefresh: Boolean = false) {
         var list = MovieListUtils.MovieList.topRated
-        if(movieLists[movieListPosition] == getString(R.string.Most_Popular)) {
+        if (movieLists[movieListPosition] == getString(R.string.Most_Popular)) {
             list = MovieListUtils.MovieList.mostPopular
         }
 
-        if(isRefresh) {
+        if (isRefresh) {
             moviesViewModel.refresh(list)
         }
         else {
